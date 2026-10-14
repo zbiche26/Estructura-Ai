@@ -1,0 +1,43 @@
+# Entorno virtual
+.venv/
+venv/
+env/
+ENV/
+
+# Variables de entorno 
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Carpeta temporal
+temp_uploads/
+
+# Base de datos local
+*.db
+*.sqlite
+cargar_propiedades.py
+propiedades.xlsx
+
+# Notas locales / artefactos temporales
+tree_snapshot.txt
+contexto_estructuraai.md

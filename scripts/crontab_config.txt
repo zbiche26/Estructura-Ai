@@ -1,0 +1,26 @@
+# ============================================
+# Configuración de Cron para Jobs Diarios
+# ============================================
+# Este archivo configura la ejecución automática de los jobs diarios
+# a las 2:00 AM (hora del servidor)
+#
+# INSTALACIÓN:
+#   1. Copiar este contenido al crontab:
+#      crontab -e
+#
+#   2. O ejecutar el script de instalación:
+#      bash scripts/install_cron.sh
+#
+# VERIFICAR:
+#   crontab -l
+#
+# LOGS:
+#   Los logs se guardan en: logs/daily_jobs.log
+# ============================================
+
+# Job diario: Ejecutar a las 7:30 PM (19:30) todos los días
+# Nota: Ajustar la ruta según la ubicación del proyecto
+30 19 * * * cd /ruta/al/proyecto && bash scripts/run_daily_jobs.sh >> logs/daily_jobs.log 2>&1
+
+# Ejemplo para ejecutAR cada hora (descomentar si se necesita):
+# 0 * * * * cd /ruta/al/proyecto && python scripts/jobs/check_stock_alerts.py >> logs/stock_alerts.log 2>&1
